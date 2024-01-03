@@ -31,5 +31,20 @@ input.addEventListener('change', function() {
   })
 })
 
-   
+ //Oppgave 3
+ 
+ var input = document.getElementById('input')
+input.addEventListener('change', function() {
+  readXlsxFile(input.files[0]).then(function(rows) {
+    
+    var divcontainer = document.createElement ("div")
+    document.body.append (divcontainer)
+    rows(element  => {
+        img = document.createElement('img')
+        img.src = element [7]
+        img.style.width = "100px"
+        divcontainer.appendChild(img)
+    })
+  })
+})
 
