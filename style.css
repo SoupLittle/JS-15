@@ -1,0 +1,29 @@
+
+* {
+background-color: #cc8f94;}
+
+input[type="file"] {
+    display: none;
+  }
+
+  label[for="input"] {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 0.5em;
+    justify-items: center;
+    align-content: center;
+    color: #e91e63;
+    border: 0.2em solid #e91e63;
+    background: #fad1df;
+    padding: 0.5em 1em; 
+    border-radius: 1em; 
+    cursor: pointer;
+    transition: background 1s, color 1s;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: #e91e63;
+      color: #fff;
+    }
+  }
